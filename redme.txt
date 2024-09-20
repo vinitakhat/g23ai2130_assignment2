@@ -1,0 +1,16 @@
+# Dockerized Sample Web Application on AWS
+
+This is a simple Node.js web application that runs inside a Docker container on an AWS EC2 instance. The following steps explain how the application was deployed from scratch using Docker.
+
+## Application Overview
+
+The application is a simple Node.js Express server that responds with a message when accessed at the root URL.
+
+## Steps to Deploy on AWS EC2
+
+### 1. Launch AWS EC2 Instance
+- Launch an Ubuntu EC2 instance using the AWS Management Console.
+- Configure the security group to allow SSH (port 22) and HTTP (port 80).
+- Connect to the instance using SSH:
+  ```bash
+  ssh -i /path/to/key.pem ubuntu@<public-ip-address>
